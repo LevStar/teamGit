@@ -9,12 +9,12 @@ def draw_unit(unitWin, unitX, unitY, unitRad):
     unit.draw(unitWin)
 
 uRad = 25
-uTotX = 20
-uTotY = 20
+uTotX = 10
+uTotY = 10
 spaceX = 1.2
 spaceY = 1.2
-winX = uRad * uTotX * spaceX
-winY = uRad * uTotY * spaceY
+winX = (uRad * 2) * uTotX * spaceX
+winY = (uRad * 2) * uTotY * spaceY
 
 tgWin = GraphWin("Teamwork Makes the Dream Work!", winX, winY)
 
