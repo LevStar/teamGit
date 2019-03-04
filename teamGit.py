@@ -5,8 +5,13 @@
 from graphics import *
 
 def draw_unit(unitWin, unitX, unitY, unitRad):
-    unit = Circle(unitX, unitY, unitRad)
-    unit.draw(unitWin)
+    unitA = Circle(Point(unitX, unitY), unitRad)
+    unitA.setFill("black")
+    unitA.draw(unitWin)
+    
+    unitB = Circle(unitX, unitY, unitRad - 10)
+    unitB.setFill("red")
+    unitB.draw(unitWin)
 
 uRad = 25
 uTotX = 10
