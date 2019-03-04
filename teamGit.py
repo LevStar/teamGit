@@ -9,7 +9,7 @@ def draw_unit(unitWin, unitX, unitY, unitRad):
     unitA.setFill("black")
     unitA.draw(unitWin)
     
-    unitB = Circle(unitX, unitY, unitRad - 10)
+    unitB = Circle(Point(unitX, unitY), unitRad - 10)
     unitB.setFill("red")
     unitB.draw(unitWin)
 
