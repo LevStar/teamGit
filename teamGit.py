@@ -5,7 +5,7 @@
 from graphics import *
 
 def draw_unit(unitWin, unitX, unitY, unitRad):
-    unit = Circle(unitX, unitY, unitRad)
+    unit = Circle(Point(unitX, unitY), unitRad)
     unit.draw(unitWin)
 
 uRad = 25
@@ -18,6 +18,7 @@ winY = (uRad * 2) * uTotY * spaceY
 
 tgWin = GraphWin("Teamwork Makes the Dream Work!", winX, winY)
 
+draw_unit(tgWin, uTotX, uTotY, uRad)
 
 tgWin.getMouse()
 tgWin.close()
