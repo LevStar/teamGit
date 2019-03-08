@@ -13,6 +13,10 @@ def draw_unit(unitWin, unitX, unitY, unitRad):
     unitB.setFill("red")
     unitB.draw(unitWin)
 
+    unitC = Circle(Point(unitX, unitY), unitRad - 20)
+    unitC.setFill("yellow")
+    unitC.draw(unitWin)
+
 uRad = 25
 uTotX = 10
 uTotY = 10
@@ -24,7 +28,6 @@ winY = (uRad * 2) * uTotY * spaceY
 tgWin = GraphWin("Teamwork Makes the Dream Work!", winX, winY)
 
 draw_unit(tgWin, winX / 2, winY / 2, uRad)
-draw_unit(tgWin, winX / 4, winY / 4, uRad)
 
 tgWin.getMouse()
 tgWin.close()
