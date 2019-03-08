@@ -23,6 +23,7 @@ winY = (uRad * 2) * uTotY * spaceY
 
 tgWin = GraphWin("Teamwork Makes the Dream Work!", winX, winY)
 
+draw_unit(tgWin, winX / 2, winY / 2, uRad)
 
 tgWin.getMouse()
 tgWin.close()
