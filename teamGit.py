@@ -2,9 +2,14 @@
 # while a 2nd programmer changes the number of times the shape is displayed
 # and other aspects of the final display.
 
+# This version contains only the function to draw the unit & related variables.
+
 from graphics import *
 
 def draw_unit(unitWin, unitX, unitY, unitRad):
+    """So far, this function only requires a window,
+       2D coords and a size in pixels. Colors are locked."""
+    
     unitA = Circle(Point(unitX, unitY), unitRad)
     unitA.setFill("black")
     unitA.draw(unitWin)
