@@ -25,9 +25,3 @@ spaceY = 1.2
 winX = (uRad * 2) * uTotX * spaceX
 winY = (uRad * 2) * uTotY * spaceY
 
-tgWin = GraphWin("Teamwork Makes the Dream Work!", winX, winY)
-
-draw_unit(tgWin, winX / 2, winY / 2, uRad)
-
-tgWin.getMouse()
-tgWin.close()
